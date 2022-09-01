@@ -514,6 +514,9 @@ footer p:nth-child(2) {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
 @media screen and (max-width: 430px) {
   .hero-image {
     width: 10px;
