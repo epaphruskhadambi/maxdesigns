@@ -4,11 +4,14 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  /*overflow-x: hiddenxmm;*/
 }
 
 body {
   /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
   font-family: "Josefin Sans", sans-serif;
+  /*overflow-x: hiddenxmm;*/
+  width: 100%;
 }
 
 nav {
@@ -379,9 +382,9 @@ footer p:nth-child(2) {
     flex-direction: column;
   }
 
-  .hero-image {
+  /*.hero-image {
     padding-left: ;
-  }
+  }*/
 
   .hero > .hero-text {
     position: sticky;
@@ -514,12 +517,9 @@ footer p:nth-child(2) {
   }
 }
 
-body {
-  overflow-x: hidden;
-}
 @media screen and (max-width: 430px) {
   .hero-image {
-    width: 10px;
+    width: 100%;
   }
   .hero > .hero-text {
     width: 100%;
