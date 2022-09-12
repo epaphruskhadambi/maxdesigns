@@ -395,7 +395,8 @@ footer p:nth-child(2) {
     width: 100%;
   }
   body {
-    position: absolute;
+    position: fixed;
+    width: 100vw;
   }
 }
 
