@@ -394,10 +394,6 @@ footer p:nth-child(2) {
     padding-left: 2%;
     width: 100%;
   }
-  body {
-    position: absolute;
-    width: 100vw;
-  }
 }
 
 @media (max-width: 858px) {
