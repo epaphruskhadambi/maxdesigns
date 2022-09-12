@@ -5,7 +5,6 @@
   list-style: none;
   box-sizing: border-box;
   /*overflow-x: hiddenxmm;*/
-  position: fixed;
 }
 
 body {
@@ -394,6 +393,9 @@ footer p:nth-child(2) {
     padding-top: 10px;
     padding-left: 2%;
     width: 100%;
+  }
+  body {
+    position: absolute;
   }
 }
 
