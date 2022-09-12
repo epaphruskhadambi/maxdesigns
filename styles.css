@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  position: static;
   /*overflow-x: hiddenxmm;*/
 }
 
@@ -11,7 +12,6 @@ body {
   /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
   font-family: "Josefin Sans", sans-serif;
   /*overflow-x: hiddenxmm;*/
-  width: 100%;
 }
 
 nav {
@@ -514,6 +514,9 @@ footer p:nth-child(2) {
   label.logo {
     padding-left: 10px;
     padding-right: 5px;
+  }
+  body {
+    width: 100%;
   }
 }
 
