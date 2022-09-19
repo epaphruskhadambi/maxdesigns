@@ -29,6 +29,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="jquery.flipster.min.css" />
     <title>Max designs</title>
   </head>
   <body>
@@ -165,10 +166,32 @@
         </div>
       </div>
     </div>
+    <!-------My work-------->
+    <section>
+      <div class="portfolio">
+        <h2>SAMPLE OF MY WORK</h2>
+        <div class="carousel">
+          <ul>
+            <li><img src="images/img1.jpeg" /></li>
+            <li><img src="images/img2.jpeg" /></li>
+            <li><img src="images/img3.jpeg" /></li>
+            <li><img src="images/img4.jpeg" /></li>
+            <li><img src="images/img5.jpeg" /></li>
+            <li><img src="images/img6.jpeg" /></li>
+            <li><img src="#" /></li>
+            <li><img src="#" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!------Contact Me------>
     <div class="contact-me" id="contact">
-      <p>In need of a website?</p>
+      <h3>In need of a website?</h3>
+      <br />
+      <br />
+      <p>Let's Make Something Together</p>
+      <p>Start By Saying Hi!</p>
       <a
         class="button-two"
         href="mailto:max.maxdesigns@gmail.com? subject=subject text"
@@ -197,5 +220,13 @@
     <a href="https://wa.me/254794561534" class="whatsapp_float" target="_blank">
       <i class="fa fa-whatsapp whatsapp-icon"></i
     ></a>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+      $(".carousel").flipster({
+        style: "carousel",
+        spacing: -0.3,
+      });
+    </script>
   </body>
 </html>
