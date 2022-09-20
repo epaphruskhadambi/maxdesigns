@@ -302,10 +302,8 @@ h5 {
 }
 .gallery-container h2 {
   color: #000;
-  text-align: center;
   font-size: 350%;
-  /* text-transform: capitalize;*/
-  margin: auto;
+  text-align: center;
 }
 .gallery-container .image-container {
   columns: 3 250px;
