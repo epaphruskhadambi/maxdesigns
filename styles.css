@@ -294,13 +294,19 @@ h5 {
 #main-gallery-container {
   background-color: rgb(223, 223, 223);
 }
-
 .gallery-container {
   max-width: 85%;
   margin: auto;
+  padding-top: 3%;
   padding-bottom: 3%;
 }
-
+.gallery-container h2 {
+  color: #000;
+  text-align: center;
+  font-size: 350%;
+  /* text-transform: capitalize;*/
+  margin: auto;
+}
 .gallery-container .image-container {
   columns: 3 250px;
   gap: 15px;
