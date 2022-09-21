@@ -19,6 +19,9 @@ body {
   min-width: 350px;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 nav {
   background: #000;
   width: 100%;
