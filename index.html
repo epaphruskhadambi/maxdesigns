@@ -30,6 +30,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <!-- <script
+      src="https://kit.fontawesome.com/bec97e0795.js"
+      crossorigin="anonymous"
+    ></script> -->
     <!--<link rel="stylesheet" href="jquery.flipster.min.css" />-->
     <title>Max designs</title>
   </head>
@@ -68,9 +72,14 @@
                 type="email"
                 name="email"
                 id="mail"
-                placeholder="Enter Your Email"
+                placeholder="Enter email to receice updates"
               />
-              <input type="submit" name="submit" value="Submit you Email" />
+              <input
+                type="submit"
+                name="submit"
+                value="Submit"
+                onclick="myFunction()"
+              />
             </form>
           </div>
         </div>
@@ -255,10 +264,23 @@
     <footer>
       <p>Maxwel Khadambi</p>
       <p>Looking forward to work on your projects</p>
+      <div class="address-div">
+        <h3>Contact</h3>
+        <address class="footer-address" id="footer-address">
+          <a href="" class="footer-social" id="fa-phone"
+            ><i class="fa fa-phone" style="color: #fff">
+              &nbsp; 0794 561 534 <br />
+            </i>
+          </a>
+        </address>
+      </div>
       <div class="social">
+        <a href="mailto:max.maxdesigns@gmail.com? subject=subject text"
+          ><i class="fa fa-envelope"></i
+        ></a>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- <a href="#"><i class="fab fa-dribbble"></i></a> -->
       </div>
       <div class="copyright">
         <span
@@ -294,5 +316,10 @@
       <!--<div class="spinner-2">Loading</div>-->
     </section>
     <!--Spinner end-->
+    <script>
+      function myFunction() {
+        alert("Thanks!\nEmail received succesfully.");
+      }
+    </script>
   </body>
 </html>
