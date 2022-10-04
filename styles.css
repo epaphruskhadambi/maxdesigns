@@ -396,6 +396,7 @@ footer p:nth-child(2) {
 }
 .address-div {
   color: #fff;
+  text-align: center;
 }
 .social {
   display: flex;
