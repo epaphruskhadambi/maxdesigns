@@ -398,6 +398,13 @@ footer p:nth-child(2) {
   color: #fff;
   text-align: center;
 }
+.address-div h3 {
+  font-size: 23px;
+  font-weight: bolder;
+}
+.address-div p {
+  font-size: 24px;
+}
 .social {
   display: flex;
 }
@@ -422,7 +429,7 @@ footer p:nth-child(2) {
 .copyright {
   position: absolute;
   color: #fff;
-  bottom: 35px;
+  bottom: 10px;
   font-size: 14px;
 }
 
@@ -513,7 +520,9 @@ footer p:nth-child(2) {
   .hero-image {
     padding-top: 90px;
   }
-
+  #bgimage {
+    width: 100%;
+  }
   nav {
     position: fixed;
     z-index: 2;

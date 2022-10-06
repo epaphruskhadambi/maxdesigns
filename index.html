@@ -57,7 +57,7 @@
     <section style="background-color: #000">
       <div class="hero" id="hero">
         <div class="hero-image">
-          <img src="images/Maxwel.jpg" alt="" />
+          <img src="images/Maxwel.jpg" alt="" id="bgimage" />
         </div>
         <div class="hero-text">
           <h4>Hi, my name is</h4>
@@ -67,12 +67,14 @@
             Kenya.
           </h3>
           <div class="newslatter">
-            <form>
+            <form action="" method="GET">
               <input
+                for="email"
                 type="email"
                 name="email"
-                id="mail"
+                id="email"
                 placeholder="Enter email to receice updates"
+                required
               />
               <input
                 type="submit"
@@ -318,10 +320,10 @@
       <!--<div class="spinner-2">Loading</div>-->
     </section>
     <!--Spinner end-->
-    <script>
+    <!-- <script>
       function myFunction() {
         alert("Thanks!\nEmail received succesfully.");
       }
-    </script>
+    </script> -->
   </body>
 </html>
