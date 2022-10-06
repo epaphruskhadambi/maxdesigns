@@ -40,7 +40,7 @@ label.logo {
 }*/
 nav ul {
   float: right;
-  /*margin-right: 20px;*/
+  margin-right: 20px;
 }
 nav ul li {
   display: inline-block;
@@ -523,6 +523,13 @@ footer p:nth-child(2) {
   #bgimage {
     width: 100%;
   }
+  /*.newslatter form {
+    width: 96%;
+  }
+  .newslatter form input:last-child {
+    padding-left: 5%;
+    padding-right: 5%;
+  }*/
   nav {
     position: fixed;
     z-index: 2;
