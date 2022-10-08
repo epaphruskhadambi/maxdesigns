@@ -67,7 +67,11 @@
             Kenya.
           </h3>
           <div class="newslatter">
-            <form action="" method="GET">
+            <form
+              action=""
+              method=""
+              onsubmit="sendEmail(); reset(); return false;"
+            >
               <input
                 for="email"
                 type="email"
@@ -227,27 +231,6 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div class="portfolio">
-        <h2>SAMPLE OF MY WORK</h2>
-        <div class="carousel">
-          <ul>
-            <li><img src="img1.jpg" /></li>
-            <li><img src="img10.jpg" /></li>
-            <li><img src="img2.jpg" /></li>
-            <li><img src="img3.jpg" /></li>
-            <li><img src="img4.jpg" /></li>
-            <li><img src="img5.jpg" /></li>
-            <li><img src="img6.jpg" /></li>
-            <li><img src="img7.jpg" /></li>
-            <li><img src="img8.jpg" /></li>
-            <li><img src="img9.jpg" /></li>
-            <li><img src="img7.jpg" /></li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
     <!------Contact Me------>
     <div class="contact-me" id="contact">
       <h3>In need of a website?</h3>
@@ -320,10 +303,26 @@
       <!--<div class="spinner-2">Loading</div>-->
     </section>
     <!--Spinner end-->
+
+    <!--Alert(Thanks received)-->
     <!-- <script>
       function myFunction() {
         alert("Thanks!\nEmail received succesfully.");
       }
     </script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "maxwelkhadambi@gmail.com",
+          Password: "max11417",
+          To: "maxwelkhadambi@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New email subscription",
+          Body: "Email: " + document.getElementById("email").value,
+        }).then((message) => alert("Email received succesfully"));
+      }
+    </script>
   </body>
 </html>
