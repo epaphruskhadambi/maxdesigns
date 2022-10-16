@@ -68,24 +68,18 @@
           </h3>
           <div class="newslatter">
             <form
-              action=""
-              method=""
-              onsubmit="sendEmail(); reset(); return false;"
+              name="submit-to-google-sheet"
+              onsubmit="sendEmail();  return false;"
             >
               <input
                 for="email"
-                type="email"
-                name="email"
+                type="mail"
+                name="Email"
                 id="email"
                 placeholder="Enter email to receice updates"
                 required
               />
-              <input
-                type="submit"
-                name="submit"
-                value="Submit"
-                onclick="myFunction()"
-              />
+              <input type="submit" name="submit" value="Submit" />
             </form>
           </div>
         </div>
@@ -304,25 +298,41 @@
     </section>
     <!--Spinner end-->
 
-    <!--Alert(Thanks received)-->
-    <!-- <script>
-      function myFunction() {
-        alert("Thanks!\nEmail received succesfully.");
-      }
-    </script> -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--Alert(Thanks received) smtp server -->
+    <!--  <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       function sendEmail() {
         Email.send({
-          Host: "smtp.gmail.com",
+          secureToken: "b5a9ed50-5b20-4ec1-90a4-232e0549a182",
+          Host: "smtp.elasticemail.com",
           Username: "maxwelkhadambi@gmail.com",
-          Password: "max11417",
-          To: "maxwelkhadambi@gmail.com",
+          Password: "6E252C21101151F79C602E23A4848F057126",
+          To: "max.maxdesigns@gmail.com",
           From: document.getElementById("email").value,
           Subject: "New email subscription",
           Body: "Email: " + document.getElementById("email").value,
         }).then((message) => alert("Email received succesfully"));
       }
+    </script> -->
+
+    <script>
+      function sendEmail() {
+        alert("Email received succesfully");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxcGlQ_6KaZPdLX1q0zEH2rxe8qPdDVyNiD-DpuOdzqC2r6xtO9omasrcL-J1jtRIe4Wg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+        form.reset();
+      });
     </script>
   </body>
 </html>
