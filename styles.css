@@ -5,7 +5,6 @@
   list-style: none;
   box-sizing: border-box;
   position: static;
-  /*overflow-x: hiddenxmm;*/
 }
 body {
   /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
@@ -99,6 +98,7 @@ a:hover {
   right: 8%;
   transform: translateY(-50%);
   z-index: 0;
+  line-height: 28px;
 }
 .hero > .hero-text h1 {
   margin: 20px 0px 20px;
