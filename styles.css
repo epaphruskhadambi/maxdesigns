@@ -611,6 +611,12 @@ footer p:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 680px) {
+  .hero > .hero-text h1 {
+    line-height: 100%;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .hero-image {
     width: 100%;
@@ -622,6 +628,7 @@ footer p:nth-child(2) {
 
   .hero > .hero-text h1 {
     font-size: 40px;
+    line-height: 100%;
   }
 
   .hero > .hero-text h3 {
