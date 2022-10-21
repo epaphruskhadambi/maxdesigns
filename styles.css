@@ -98,7 +98,6 @@ a:hover {
   right: 8%;
   transform: translateY(-50%);
   z-index: 0;
-  line-height: 28px;
 }
 .hero > .hero-text h1 {
   margin: 20px 0px 20px;
@@ -107,6 +106,7 @@ a:hover {
 .hero > .hero-text h3 {
   font-size: 25px;
   margin-bottom: 50px;
+  line-height: 35px;
 }
 .hero > .hero-text h4 {
   letter-spacing: 2px;
