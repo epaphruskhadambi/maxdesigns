@@ -400,12 +400,12 @@ footer p:nth-child(2) {
   color: #fff;
   text-align: center;
 }
-.address-div h3 {
+/*.address-div h3 {
   font-size: 23px;
   font-weight: bolder;
-}
+}*/
 .address-div p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .social {
   display: flex;
