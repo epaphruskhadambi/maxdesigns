@@ -346,14 +346,16 @@ div.item {
   justify-content: center;
 }
 .contact-me h3 {
+  font-size: 28px;
   font-weight: bold;
   color: #000;
-  font-size: 35px;
+  text-align: center;
 }
 .contact-me p {
   color: black;
   font-size: 25px;
   margin-bottom: 25px;
+  text-align: center;
 }
 .contact-me .button-two {
   background-color: #3120e0;
